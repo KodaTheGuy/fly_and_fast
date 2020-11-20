@@ -4,7 +4,7 @@ func = function(name, param)
     local privs = minetest.get_player_privs(name)
     privs.fly = true
     minetest.set_player_privs(name, privs)
-    minetest.chat_send_all(minetest.colorize("FF00E0", name.." now has fly!"))
+    minetest.chat_send_all(minetest.colorize("#FF00E0", name.." now has fly!"))
 end,
 })
 
@@ -14,7 +14,7 @@ func = function(name, param)
     local privs = minetest.get_player_privs(name)
     privs.fast = true
     minetest.set_player_privs(name, privs)
-    minetest.chat_send_all(minetest.colorize("FF00E0", name.." now has fast!"))
+    minetest.chat_send_all(minetest.colorize("#FF00E0", name.." now has fast!"))
 end,
 })
 
